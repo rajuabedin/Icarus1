@@ -1,0 +1,17 @@
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Icarus.exe.config
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Icarus.exe
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Icarus.pdb
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu_UI_v1.5.3.dll
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.csprojAssemblyReference.cache
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.Dashboard.resources
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.Properties.Resources.resources
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.csproj.GenerateResource.cache
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.csproj.CoreCompileInputs.cache
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.csproj.CopyComplete
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.exe
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.pdb
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.login.resources

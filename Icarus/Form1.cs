@@ -31,8 +31,7 @@ namespace Icarus
             timer1.Enabled = true;
             timer1.Start();
             timer1.Interval = 1000;
-
-
+            
             differenceText.Text = (Int32.Parse(predictedText.Text) - Int32.Parse(salesText.Text)).ToString();
 
 
@@ -63,6 +62,23 @@ namespace Icarus
                 timer1.Stop();
             }
             
+        }
+
+        private void showGraphB_Click(object sender, EventArgs e)
+        {
+            graph graph = new graph();
+            graph.Show();
+        }
+
+        private void satrtAnalisyB_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void stopAnalisyB_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            bunifuProgressBar1.Value = 0;
         }
     }
 }

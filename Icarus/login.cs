@@ -22,16 +22,6 @@ namespace Icarus
             
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            DialogResult resault = MessageBox.Show("Are you sure to exit the application?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (resault == DialogResult.Yes)
-            {
-                Dashboard.setDeclinedLogin(true);
-                Close();
-            }
-            
-        }
 
         private void loginButton_Click(object sender, EventArgs e)
         {
@@ -55,5 +45,16 @@ namespace Icarus
 
 
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            DialogResult resault = MessageBox.Show("Are you sure to exit the application?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resault == DialogResult.Yes)
+            {
+                Dashboard.setDeclinedLogin(true);
+                Close();
+            }
+        }
+        
     }
 }

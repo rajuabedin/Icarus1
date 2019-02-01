@@ -35,9 +35,13 @@
             this.usernameText = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.passwordText = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.loginButton = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.closeButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.topBar = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
+            this.topBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -48,7 +52,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(125, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(124, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 163);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,25 +182,59 @@
             this.loginButton.TextFont = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuLabel1.Location = new System.Drawing.Point(12, 9);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(40, 22);
+            this.bunifuLabel1.TabIndex = 1;
+            this.bunifuLabel1.Text = "Login";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            // 
             // closeButton
             // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
             this.closeButton.ImageActive = null;
-            this.closeButton.Location = new System.Drawing.Point(353, 12);
+            this.closeButton.Location = new System.Drawing.Point(373, 5);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(35, 35);
-            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.closeButton.TabIndex = 6;
+            this.closeButton.Size = new System.Drawing.Size(30, 30);
+            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeButton.TabIndex = 1;
             this.closeButton.TabStop = false;
-            this.closeButton.Zoom = 10;
+            this.closeButton.Zoom = 5;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // topBar
+            // 
+            this.topBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.topBar.Controls.Add(this.bunifuLabel1);
+            this.topBar.Controls.Add(this.closeButton);
+            this.topBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topBar.Location = new System.Drawing.Point(0, 0);
+            this.topBar.Name = "topBar";
+            this.topBar.Size = new System.Drawing.Size(409, 40);
+            this.topBar.TabIndex = 6;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.topBar;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 513);
-            this.Controls.Add(this.closeButton);
+            this.ClientSize = new System.Drawing.Size(409, 419);
+            this.Controls.Add(this.topBar);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.passwordText);
             this.Controls.Add(this.usernameText);
@@ -209,6 +247,8 @@
             this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).EndInit();
+            this.topBar.ResumeLayout(false);
+            this.topBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -220,6 +260,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox passwordText;
         private Bunifu.Framework.UI.BunifuFlatButton loginButton;
+        private System.Windows.Forms.Panel topBar;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuImageButton closeButton;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

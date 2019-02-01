@@ -15,3 +15,4 @@ c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuIma
 c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
 c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.login.resources
+C:\Users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.graph.resources

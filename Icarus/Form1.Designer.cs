@@ -29,24 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.topBar = new System.Windows.Forms.Panel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.closeButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.salesText = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.predictedText = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.differenceText = new System.Windows.Forms.Label();
             this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.satrtAnalisyB = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.stopAnalisyB = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.showGraphB = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.panel1.SuspendLayout();
@@ -70,28 +76,6 @@
             this.topBar.Size = new System.Drawing.Size(926, 40);
             this.topBar.TabIndex = 0;
             // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
-            this.closeButton.ImageActive = null;
-            this.closeButton.Location = new System.Drawing.Point(890, 5);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(30, 30);
-            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeButton.TabIndex = 1;
-            this.closeButton.TabStop = false;
-            this.closeButton.Zoom = 0;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.topBar;
-            this.bunifuDragControl1.Vertical = true;
-            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AutoEllipsis = false;
@@ -106,6 +90,28 @@
             this.bunifuLabel1.Text = "Dashboard";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
+            // closeButton
+            // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
+            this.closeButton.ImageActive = null;
+            this.closeButton.Location = new System.Drawing.Point(890, 5);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(30, 30);
+            this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeButton.TabIndex = 1;
+            this.closeButton.TabStop = false;
+            this.closeButton.Zoom = 5;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.topBar;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
@@ -116,25 +122,17 @@
             this.panel1.Size = new System.Drawing.Size(244, 135);
             this.panel1.TabIndex = 1;
             // 
-            // panel2
+            // label1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.predictedText);
-            this.panel2.Location = new System.Drawing.Point(335, 76);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 135);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.differenceText);
-            this.panel3.Location = new System.Drawing.Point(608, 76);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(244, 135);
-            this.panel3.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 34);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "SALES";
             // 
             // salesText
             // 
@@ -150,6 +148,28 @@
             this.salesText.Text = "10340";
             this.salesText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.predictedText);
+            this.panel2.Location = new System.Drawing.Point(335, 76);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(244, 135);
+            this.panel2.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(8, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 34);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "PREDICTED";
+            // 
             // predictedText
             // 
             this.predictedText.BackColor = System.Drawing.Color.Transparent;
@@ -163,6 +183,29 @@
             this.predictedText.TabIndex = 5;
             this.predictedText.Text = "10460";
             this.predictedText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.differenceText);
+            this.panel3.Location = new System.Drawing.Point(608, 76);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(244, 135);
+            this.panel3.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(8, 7);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(2, 5, 0, 0);
+            this.label3.Size = new System.Drawing.Size(158, 39);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "DIFFERENCE";
             // 
             // differenceText
             // 
@@ -204,42 +247,104 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label3
+            // satrtAnalisyB
             // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 7);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            this.label3.Size = new System.Drawing.Size(158, 39);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "DIFFERENCE";
+            this.satrtAnalisyB.BackColor = System.Drawing.Color.Transparent;
+            this.satrtAnalisyB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("satrtAnalisyB.BackgroundImage")));
+            this.satrtAnalisyB.ButtonText = "Start Analisy";
+            this.satrtAnalisyB.ButtonTextMarginLeft = 0;
+            this.satrtAnalisyB.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.satrtAnalisyB.DisabledFillColor = System.Drawing.Color.Gray;
+            this.satrtAnalisyB.DisabledForecolor = System.Drawing.Color.White;
+            this.satrtAnalisyB.ForeColor = System.Drawing.Color.White;
+            this.satrtAnalisyB.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.satrtAnalisyB.IconPadding = 10;
+            this.satrtAnalisyB.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.satrtAnalisyB.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.satrtAnalisyB.IdleBorderRadius = 1;
+            this.satrtAnalisyB.IdleBorderThickness = 0;
+            this.satrtAnalisyB.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.satrtAnalisyB.IdleIconLeftImage = null;
+            this.satrtAnalisyB.IdleIconRightImage = null;
+            this.satrtAnalisyB.Location = new System.Drawing.Point(335, 232);
+            this.satrtAnalisyB.Name = "satrtAnalisyB";
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.BorderRadius = 1;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.satrtAnalisyB.onHoverState = stateProperties3;
+            this.satrtAnalisyB.Size = new System.Drawing.Size(244, 45);
+            this.satrtAnalisyB.TabIndex = 6;
+            this.satrtAnalisyB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.satrtAnalisyB.Click += new System.EventHandler(this.satrtAnalisyB_Click);
             // 
-            // label1
+            // stopAnalisyB
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 34);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "SALES";
+            this.stopAnalisyB.BackColor = System.Drawing.Color.Transparent;
+            this.stopAnalisyB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("stopAnalisyB.BackgroundImage")));
+            this.stopAnalisyB.ButtonText = "Stop Analisy";
+            this.stopAnalisyB.ButtonTextMarginLeft = 0;
+            this.stopAnalisyB.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.stopAnalisyB.DisabledFillColor = System.Drawing.Color.Gray;
+            this.stopAnalisyB.DisabledForecolor = System.Drawing.Color.White;
+            this.stopAnalisyB.ForeColor = System.Drawing.Color.White;
+            this.stopAnalisyB.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.stopAnalisyB.IconPadding = 10;
+            this.stopAnalisyB.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.stopAnalisyB.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.stopAnalisyB.IdleBorderRadius = 1;
+            this.stopAnalisyB.IdleBorderThickness = 0;
+            this.stopAnalisyB.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.stopAnalisyB.IdleIconLeftImage = null;
+            this.stopAnalisyB.IdleIconRightImage = null;
+            this.stopAnalisyB.Location = new System.Drawing.Point(608, 232);
+            this.stopAnalisyB.Name = "stopAnalisyB";
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.stopAnalisyB.onHoverState = stateProperties2;
+            this.stopAnalisyB.Size = new System.Drawing.Size(244, 45);
+            this.stopAnalisyB.TabIndex = 7;
+            this.stopAnalisyB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.stopAnalisyB.Click += new System.EventHandler(this.stopAnalisyB_Click);
             // 
-            // label4
+            // showGraphB
             // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(8, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 34);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "PREDICTED";
+            this.showGraphB.BackColor = System.Drawing.Color.Transparent;
+            this.showGraphB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("showGraphB.BackgroundImage")));
+            this.showGraphB.ButtonText = "Show Graph";
+            this.showGraphB.ButtonTextMarginLeft = 0;
+            this.showGraphB.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.showGraphB.DisabledFillColor = System.Drawing.Color.Gray;
+            this.showGraphB.DisabledForecolor = System.Drawing.Color.White;
+            this.showGraphB.ForeColor = System.Drawing.Color.White;
+            this.showGraphB.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.showGraphB.IconPadding = 10;
+            this.showGraphB.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.showGraphB.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.showGraphB.IdleBorderRadius = 1;
+            this.showGraphB.IdleBorderThickness = 0;
+            this.showGraphB.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.showGraphB.IdleIconLeftImage = null;
+            this.showGraphB.IdleIconRightImage = null;
+            this.showGraphB.Location = new System.Drawing.Point(59, 232);
+            this.showGraphB.Name = "showGraphB";
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.showGraphB.onHoverState = stateProperties1;
+            this.showGraphB.Size = new System.Drawing.Size(244, 45);
+            this.showGraphB.TabIndex = 8;
+            this.showGraphB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.showGraphB.Click += new System.EventHandler(this.showGraphB_Click);
             // 
             // Dashboard
             // 
@@ -248,6 +353,9 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
             this.ClientSize = new System.Drawing.Size(926, 537);
+            this.Controls.Add(this.showGraphB);
+            this.Controls.Add(this.stopAnalisyB);
+            this.Controls.Add(this.satrtAnalisyB);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.bunifuProgressBar1);
             this.Controls.Add(this.panel3);
@@ -293,6 +401,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton stopAnalisyB;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton satrtAnalisyB;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton showGraphB;
     }
 }
 

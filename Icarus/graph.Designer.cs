@@ -57,21 +57,22 @@
             this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 41);
+            this.chart1.Location = new System.Drawing.Point(0, 26);
             this.chart1.Name = "chart1";
             series1.BorderWidth = 3;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.MarkerBorderWidth = 3;
+            series1.Name = "Sales";
             series2.BorderWidth = 3;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series2.Legend = "Legend1";
-            series2.Name = "Series2";
+            series2.Name = "Prediction";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(854, 485);
+            this.chart1.Size = new System.Drawing.Size(1021, 578);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -91,7 +92,7 @@
             this.topBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.topBar.Location = new System.Drawing.Point(0, 0);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(854, 40);
+            this.topBar.Size = new System.Drawing.Size(1021, 40);
             this.topBar.TabIndex = 1;
             // 
             // bunifuLabel1
@@ -103,9 +104,9 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(12, 9);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(87, 22);
+            this.bunifuLabel1.Size = new System.Drawing.Size(83, 22);
             this.bunifuLabel1.TabIndex = 1;
-            this.bunifuLabel1.Text = "Selles Graph";
+            this.bunifuLabel1.Text = "Sales Graph";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             // 
             // closeButton
@@ -114,7 +115,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.Image = ((System.Drawing.Image)(resources.GetObject("closeButton.Image")));
             this.closeButton.ImageActive = null;
-            this.closeButton.Location = new System.Drawing.Point(818, 5);
+            this.closeButton.Location = new System.Drawing.Point(985, 5);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(30, 30);
             this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,10 +126,12 @@
             // 
             // graph
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(854, 526);
+            this.ClientSize = new System.Drawing.Size(1021, 604);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.chart1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

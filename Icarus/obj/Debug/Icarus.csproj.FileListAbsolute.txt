@@ -16,3 +16,7 @@ c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuLab
 c:\users\kremi\source\repos\Icarus\Icarus\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 c:\users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.login.resources
 C:\Users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.graph.resources
+C:\Users\kremi\source\repos\Icarus\Icarus\bin\Debug\Icarus.exe.manifest
+C:\Users\kremi\source\repos\Icarus\Icarus\bin\Debug\Icarus.application
+C:\Users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.exe.manifest
+C:\Users\kremi\source\repos\Icarus\Icarus\obj\Debug\Icarus.application

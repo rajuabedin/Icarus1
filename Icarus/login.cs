@@ -28,7 +28,7 @@ namespace Icarus
             string username = usernameText.Text;
             string password = passwordText.Text;
 
-            if (username == "kremisisupremo" && password == "saju")
+            if (username == "admin" && password == "saju")
             {
                 DialogResult resault = MessageBox.Show("Welcome back " + username);
 
